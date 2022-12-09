@@ -31,6 +31,11 @@
   &__left {
     width: 33.333333%;
     display: table-cell;
+    vertical-align: middle;
+
+    @include respond(tab-land) {
+      display: none;
+    }
   }
 
   &__right {
@@ -54,6 +59,10 @@
     column-rule: 1px solid $color-grey-light-2;
 
     hyphens: auto;
+
+    @include respond(phone) {
+      column-count: 1;
+    }
   }
 
   // open states
