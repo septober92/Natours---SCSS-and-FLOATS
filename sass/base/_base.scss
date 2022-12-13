@@ -34,3 +34,8 @@ body {
 a {
   text-decoration: none;
 }
+
+::selection {
+  background-color: $color-primary;
+  color: invert($color: #000000);
+}
